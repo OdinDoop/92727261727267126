@@ -1,0 +1,14 @@
+{
+  "instructions": "Use this config for UptimeRobot.com",
+  "monitor_settings": {
+    "type": "http",
+    "url": "https://your-app.onrender.com/health",
+    "interval": 300,
+    "timeout": 30,
+    "alert_when_down": 1,
+    "alert_after": 0
+  },
+  "alert_contacts": {
+    "note": "Add your email in UptimeRobot dashboard"
+  }
+}

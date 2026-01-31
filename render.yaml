@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: fb-state-messenger
+    name: messenger-bot
     env: node
     buildCommand: npm install
     startCommand: npm start
@@ -9,17 +9,6 @@ services:
         value: 18.16.0
       - key: PORT
         value: 3000
-      - key: VERIFY_TOKEN
-        value: your_verify_token_here
-        sync: false
-      - key: WEBHOOK_MODE
-        value: custom
-      - key: TEST_RECIPIENT
-        value: 100082153883952
-        sync: false
+      # Add these in Render Dashboard, not here (for security)
     healthCheckPath: /health
     autoDeploy: true
-    disk:
-      name: fb-data
-      mountPath: /data
-      sizeGB: 1
